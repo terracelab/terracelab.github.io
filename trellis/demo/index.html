@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko" data-density="compact">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>테라스원 데모</title>
+    <meta
+      name="description"
+      content="Trellis 디자인 시스템으로 조립한 업무 화면 데모. 화면과 숫자는 샘플입니다."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script>
+      // 첫 페인트 전에 테마 · 밀도를 정한다(깜빡임 방지)
+      (function () {
+        var d = document.documentElement;
+        var t = null,
+          s = null;
+        try {
+          t = localStorage.getItem('tl-demo-theme');
+          s = localStorage.getItem('tl-demo-density');
+        } catch (e) {}
+        d.dataset.theme =
+          t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (s) d.dataset.density = s;
+      })();
+    </script>
+    <script type="module" crossorigin src="/trellis/demo/assets/index-DGcleBIR.js"></script>
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/Button-B0uoqFma.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/Field-dCbxzk_k.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/_ui-Bq7RZ9F1.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/bottom-inset-DuA2JfoF.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/clamp-D0kAXd-u.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/getElementTransform-js13NKl-.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/useSwipeDismiss-Bxu0E4D6.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/sheet-JQhyyK3C.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/getPseudoElementBounds-CKcCApNS.js">
+    <link rel="modulepreload" crossorigin href="/trellis/demo/assets/getHighlightReason-BtWpHbm8.js">
+    <link rel="stylesheet" crossorigin href="/trellis/demo/assets/index-CzmxG6Vl.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

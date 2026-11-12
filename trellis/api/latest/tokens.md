@@ -48,7 +48,7 @@
 | `--tl-color-border-selected` | `#CC3A00` ← `color.brand.600` | `#FF8867` ← `color.brand.400` | 5.03 | 7.27 | 선택 · 현재 표시 선(1px 테두리 · 탭 밑줄 · 진행 단계). surface 대비 3:1 이상(PR-26) |
 | `--tl-color-border-divider` | `#E5E7EB` ← `color.neutral.200` | `#3A3A3D` ← `color.graphite.600` | 1.24 | 1.50 | 구분선 |
 | `--tl-color-border-focus-strong` | `#A22C00` ← `color.brand.700` | `#FFB39D` ← `color.brand.300` | 7.25 | 9.87 | 포커스 강조 모드(data-focus="strong") · 고대비의 포커스 링. 면 · 바탕 위 4.5:1(D-97) |
-| `--tl-color-border-hover` | `#9CA3AF` ← `color.neutral.400` | `#6E6E73` ← `color.graphite.400` | 2.54 | 3.36 | 입력 칸을 가리켰을 때 테두리(식자재쿡 line-strong, D-97) |
+| `--tl-color-border-hover` | `#9CA3AF` ← `color.neutral.400` | `#6E6E73` ← `color.graphite.400` | 2.54 | 3.36 | 입력 칸을 가리켰을 때 테두리(식자재 ERP line-strong, D-97) |
 | `--tl-color-brand-default` | `#CC3A00` ← `color.brand.600` | `#CC3A00` ← `color.brand.600` | 5.03 | 3.38 | 주요 액션(D-10 주의) (2026-11-08 승인: 600. 흰 글자 대비 6.0:1) |
 | `--tl-color-brand-hover` | `#A22C00` ← `color.brand.700` | `#A22C00` ← `color.brand.700` | 7.25 | 2.35 | 주요 액션 hover. 라이트는 한 단계 진하게, 다크는 밝게 |
 | `--tl-color-brand-active` | `#7A1F00` ← `color.brand.800` | `#7A1F00` ← `color.brand.800` | 10.38 | 1.64 | 주요 액션 active |
@@ -158,9 +158,9 @@
 | `--tl-breakpoint-lg` | `1024px` |  |
 | `--tl-breakpoint-xl` | `1280px` |  |
 | `--tl-breakpoint-2xl` | `1536px` |  |
-| `--tl-color-alpha-black-40` | `#00000066` | 검정 40% — 라이트 오버레이(식자재쿡 backdrop, D-97) |
+| `--tl-color-alpha-black-40` | `#00000066` | 검정 40% — 라이트 오버레이(식자재 ERP backdrop, D-97) |
 | `--tl-color-alpha-black-48` | `#0000007A` | 검정 48% — 라이트 오버레이(D-14) |
-| `--tl-color-alpha-black-60` | `#00000099` | 검정 60% — 다크 오버레이(식자재쿡 backdrop, D-97) |
+| `--tl-color-alpha-black-60` | `#00000099` | 검정 60% — 다크 오버레이(식자재 ERP backdrop, D-97) |
 | `--tl-color-alpha-black-64` | `#000000A3` | 검정 64% — 다크 오버레이(D-14) |
 | `--tl-color-alpha-blue-16` | `#5F91FF29` | 파랑 400 16% — 다크 정보 · 모듈 erp 바탕(D-97, PR-28 전 alpha.brand.16 값) |
 | `--tl-color-alpha-neutral-16` | `#9CA3AF29` | 회색 400 16% — 다크 subtle 바탕(선택 · 배지 · 모듈 카드, D-62) |
@@ -187,7 +187,7 @@
 | `--tl-color-base-white` | `#FFFFFF` |  |
 | `--tl-color-base-black` | `#000000` |  |
 | `--tl-font-family-sans` | `'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif` | 첫 항목이 번들 서체. 나머지는 폴백(D-22) |
-| `--tl-font-family-mono` | `ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace` | 코드 · 번호. 시스템 고정폭만 쓴다(식자재쿡의 IBM Plex Mono는 번들하지 않는다, 외부 네트워크 0, D-97) |
+| `--tl-font-family-mono` | `ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace` | 코드 · 번호. 시스템 고정폭만 쓴다(식자재 ERP의 IBM Plex Mono는 번들하지 않는다, 외부 네트워크 0, D-97) |
 | `--tl-font-weight-400` | `400` |  |
 | `--tl-font-weight-500` | `500` |  |
 | `--tl-font-weight-600` | `600` |  |
@@ -199,7 +199,7 @@
 | `--tl-layout-sidebar-width` | `240px` |  |
 | `--tl-layout-sidebar-collapsed-width` | `64px` |  |
 | `--tl-layout-content-max-width` | `1440px` |  |
-| `--tl-layout-content-max-width-wide` | `1600px` | 와이드(layout.wide.minWidth 이상) 본문 최대 폭(식자재쿡 와이드, D-97) |
+| `--tl-layout-content-max-width-wide` | `1600px` | 와이드(layout.wide.minWidth 이상) 본문 최대 폭(식자재 ERP 와이드, D-97) |
 | `--tl-layout-gutter-default` | `24px` |  |
 | `--tl-layout-gutter-compact` | `16px` |  |
 | `--tl-layout-desktop-min-width` | `1024px` | 데스크톱 최소 폭 |
@@ -214,7 +214,7 @@
 | `--tl-duration-slower` | `300ms` | 아래 시트 · 토스트 · 진행 막대 폭 |
 | `--tl-duration-spin` | `900ms` | 도는 것 한 바퀴(Spinner) |
 | `--tl-duration-pulse` | `1500ms` | 반복 표시 한 주기(스켈레톤 · 깜빡임 · 진행 줄) |
-| `--tl-duration-essential` | `900ms` | 움직임 줄이기에서도 0이 되지 않는 시간. 상태를 알리는 회전(Spinner)만 쓴다(식자재쿡 animate-spin 예외, D-97) |
+| `--tl-duration-essential` | `900ms` | 움직임 줄이기에서도 0이 되지 않는 시간. 상태를 알리는 회전(Spinner)만 쓴다(식자재 ERP animate-spin 예외, D-97) |
 | `--tl-easing-standard` | `cubic-bezier(0.2, 0, 0, 1)` | 기본 전환. 가안(G2 승인 항목, D-21) |
 | `--tl-easing-decelerate` | `cubic-bezier(0, 0, 0, 1)` | 들어올 때. 가안(G2 승인 항목, D-21) |
 | `--tl-easing-accelerate` | `cubic-bezier(0.3, 0, 1, 1)` | 나갈 때. 가안(G2 승인 항목, D-21) |
@@ -226,9 +226,9 @@
 | `--tl-radius-lg` | `12px` |  |
 | `--tl-radius-xl` | `16px` |  |
 | `--tl-radius-full` | `9999px` |  |
-| `--tl-shadow-sm` | `0px 1px 3px 0px #0000000F` | 카드 · 입력 칸(식자재쿡 shadow-sm, D-97) |
-| `--tl-shadow-md` | `0px 4px 12px 0px #00000014` | 팝업 · 메뉴(식자재쿡 shadow-md) |
-| `--tl-shadow-lg` | `0px 8px 24px 0px #0000001A` | 대화상자 · 토스트(식자재쿡 shadow-lg) |
+| `--tl-shadow-sm` | `0px 1px 3px 0px #0000000F` | 카드 · 입력 칸(식자재 ERP shadow-sm, D-97) |
+| `--tl-shadow-md` | `0px 4px 12px 0px #00000014` | 팝업 · 메뉴(식자재 ERP shadow-md) |
+| `--tl-shadow-lg` | `0px 8px 24px 0px #0000001A` | 대화상자 · 토스트(식자재 ERP shadow-lg) |
 | `--tl-size-icon-16` | `16px` |  |
 | `--tl-size-icon-20` | `20px` |  |
 | `--tl-size-icon-24` | `24px` |  |
@@ -243,18 +243,18 @@
 | `--tl-size-touch-control` | `48px` | 손가락 컨트롤(Button · Input · Select의 xl) |
 | `--tl-size-touch-main` | `56px` | 꼭 누를 주요 실행(하단 고정 단추 · 목록 한 줄) |
 | `--tl-space-0` | `0px` |  |
-| `--tl-space-2` | `2px` | 식자재쿡 간격(D-97) |
+| `--tl-space-2` | `2px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-4` | `4px` |  |
-| `--tl-space-6` | `6px` | 식자재쿡 간격(D-97) |
+| `--tl-space-6` | `6px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-8` | `8px` |  |
-| `--tl-space-10` | `10px` | 식자재쿡 간격(D-97) |
+| `--tl-space-10` | `10px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-12` | `12px` |  |
-| `--tl-space-14` | `14px` | 식자재쿡 간격(D-97) |
+| `--tl-space-14` | `14px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-16` | `16px` |  |
-| `--tl-space-18` | `18px` | 식자재쿡 간격(D-97) |
+| `--tl-space-18` | `18px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-20` | `20px` |  |
 | `--tl-space-24` | `24px` |  |
-| `--tl-space-28` | `28px` | 식자재쿡 간격(D-97) |
+| `--tl-space-28` | `28px` | 식자재 ERP 간격(D-97) |
 | `--tl-space-32` | `32px` |  |
 | `--tl-space-40` | `40px` |  |
 | `--tl-space-48` | `48px` |  |
@@ -347,7 +347,7 @@ touch는 휴대폰(breakpoint.sm 미만)에서 루트에 자동으로 적용된�
 | `--tl-paper-bg` | `#FFFFFF` ← `color.base.white` | 1.00 | 종이 바탕. 가안(승인 대기) |
 | `--tl-paper-fg` | `#000000` ← `color.base.black` | 21.00 | 종이 본문 글자. 인쇄에서 단색 검정으로 찍힌다. 가안(승인 대기) |
 | `--tl-paper-muted` | `#4B5563` ← `color.neutral.600` | 7.56 | 머리 · 꼬리 · 주석 글자. bg · fill 위 4.5:1 이상. 가안(승인 대기) |
-| `--tl-paper-line` | `#646B78` ← `color.neutral.500` | 5.36 | 표 안쪽 칸 선 · 꼬리 위 구분선. 가안(승인 대기) · PR-28: 회색 단계가 식자재쿡 회색으로 바뀌어 400(2.5:1) 대신 500(5.3:1) |
+| `--tl-paper-line` | `#646B78` ← `color.neutral.500` | 5.36 | 표 안쪽 칸 선 · 꼬리 위 구분선. 가안(승인 대기) · PR-28: 회색 단계가 식자재 ERP 회색으로 바뀌어 400(2.5:1) 대신 500(5.3:1) |
 | `--tl-paper-line-strong` | `#030712` ← `color.neutral.950` | 20.13 | 표 바깥 테두리 · 합계 행 위 선. 가안(승인 대기) |
 | `--tl-paper-fill` | `#E5E7EB` ← `color.neutral.200` | 1.24 | 표 머리 · 라벨 칸 바탕. 가안(승인 대기) · PR-28: 예전 100(#E5E7EA)과 같은 값인 200(#E5E7EB) |
 | `--tl-paper-shadow` | `0px 4px 12px 0px #00000014` ← `shadow.md` |  | 화면 미리보기의 종이 그림자. 인쇄에는 그리지 않는다. 가안(승인 대기) |

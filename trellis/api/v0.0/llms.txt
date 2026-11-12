@@ -1,6 +1,6 @@
 # Trellis 0.0.0 — 테라스랩 디자인 시스템
 
-> 테라스랩의 디자인 시스템. 파일의신 · 브랜드쿡 · 식자재쿡과 테라스원 맞춤 구축이 함께 쓴다. 토큰(--tl-*) · React 컴포넌트 · 차트 · 모듈 타일. 이 문서는 설치된 패키지 버전과 같다. 최신판: https://terracelab.github.io/trellis/llms.txt
+> 테라스랩의 디자인 시스템. 테라스랩의 업무 제품과 테라스원 맞춤 구축이 함께 쓴다. 토큰(--tl-*) · React 컴포넌트 · 차트 · 모듈 타일. 이 문서는 설치된 패키지 버전과 같다. 최신판: https://terracelab.github.io/trellis/llms.txt
 
 ## 규칙
 - 값은 --tl-* CSS 변수 또는 @terracelab/trellis-tokens의 TS 객체로만 쓴다. raw hex · px(0 제외) · font-family 리터럴 금지
@@ -35,6 +35,7 @@
 - [버전 정책](guides/versions.md)
 - [Figma 라이브러리](guides/figma.md)
 - [토큰 표](tokens.md) · [변경 이력](CHANGELOG.md) · [전부 한 파일](llms-full.txt)
+- [자주 묻는 질문](https://terracelab.github.io/trellis/faq/): 무엇이고 어떻게 쓰는지 짧은 답
 - 컴포넌트 문서는 components/<이름>.md(예: [Button](components/Button.md))
 - 기본: ActionBar · AddressInput · AgentReplay · AmountBreakdown · AmountInput · ApprovalLine · ApprovalLineEditor · AppShell · Attachment · Avatar · AvatarGroup · Badge · Banner · Button · Card · ChangeDiff · Checkbox · CheckboxGroup · Checklist · Citation · CodeSearch · CommandPalette · Composer · ContextMenu · DashboardGrid · DataGrid · DateField · DeadlineStrip · Delta · DescriptionList · Dialog · Divider · Drawer · DueBadge · EmptyState · ErrorSummary · Field · FileUpload · FileViewer · FilterBar · FolderTree · FormSection · HrRecord · Icon · IconButton · Input · IssueList · KanbanBoard · KpiCard · LeaveBalance · LineItemsEditor · Link · MaskedInput · MaskedValue · Menu · MessageThread · ModuleIcon · MonthCalendar · MultiSelect · NotificationCard · NotificationItem · NotificationList · OrgChart · PageHeader · Pagination · Paper · Payslip · PeriodPicker · PermissionMatrix · PersonLabel · Popover · ProfileHeader · Progress · ProposalCard · QuantityInput · RadioGroup · ReasonDialog · RichText · RunSteps · ScanField · SectionHeader · SegmentedControl · Select · SelectableCard · SelectableList · SideNav · Skeleton · Spinner · StatusDot · Stepper · SuggestionChips · Switch · Tabs · Tag · TagInput · TeamSchedule · Textarea · TimeClock · TimeField · Timeline · Toast · Toolbar · Tooltip · TrellisProvider · WorkHoursMeter · WorkTimeline
 - 차트: BarList · BulletBar · CalendarHeatmap · ChartCard · ComboChart · DataBar · Donut · FunnelChart · HeatCell · Legend · RadialMeter · SegmentedBar · Sparkline · TrendChart · WaterfallChart

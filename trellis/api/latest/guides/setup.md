@@ -9,7 +9,7 @@ import '@terracelab/trellis-tokens/tokens.css'; // --tl-* 변수 · 라이트/�
 import '@terracelab/trellis-react/styles.css'; // 컴포넌트 CSS
 ```
 
-폰트는 패키지 안의 woff2를 씁니다. 오프라인 설치형 앱(파일의신)에서도 똑같이 렌더됩니다.
+폰트는 패키지 안의 woff2를 씁니다. 오프라인 설치형 앱에서도 똑같이 렌더됩니다.
 
 ## 테마와 밀도는 html 속성 두 개
 

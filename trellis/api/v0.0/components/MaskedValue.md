@@ -12,7 +12,7 @@ import { MaskedValue } from '@terracelab/trellis-react';
 
 ## 해부(Anatomy)
 
-root(`span`, 글줄 안에 놓인다) · text(가린 글자 · 원문, tabular, `fg.primary`) · toggle(IconButton ghost sm: eye "보기" · eye-off "다시 가리기") · timer(timer 아이콘 + "58초 뒤 가림", `type.caption` `fg.tertiary`) · copy(IconButton copy, 원문이 보일 때만) · lock(자물쇠 아이콘 `fg.tertiary` + 이유 `type.caption` `fg.tertiary`) · ReasonDialog(사유 입력) · 숨은 알림 영역(`aria-live`).
+root(`span`, 글줄 안에 놓인다) · text(가린 글자 · 원문, tabular, `fg.primary`) · toggle(IconButton ghost sm: eye "보기" · eye-off "다시 가리기") · timer(timer 아이콘 + "58초 뒤 가림", `type.caption` `fg.tertiary`) · copy(IconButton copy, 원문이 보일 때만) · lock(자물쇠 아이콘 `fg.tertiary` + 이유 `type.caption` `fg.tertiary`. 이유는 좁은 칸 · 큰 글자에서 줄을 바꾸고 아이콘은 첫 줄에 남는다) · ReasonDialog(사유 입력) · 숨은 알림 영역(`aria-live`).
 
 ## Props
 

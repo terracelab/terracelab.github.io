@@ -17,7 +17,7 @@ Paper 한 장 = header(위 줄, `paper.muted` `paper.type.caption`, 양 끝 정�
 | 조각 | props | 모양 · 토큰 |
 | --- | --- | --- |
 | `PaperTitle` | `children` 제목 · `subtitle?` 아래 한 줄 | h1, 가운데, `paper.type.display` 700, 자간 `space.8`. subtitle `paper.muted` |
-| `PaperFields` | `rows: { label, value, full? }[]` · `columns?: 4 \| 2`(기본 4) · `title?` · `note?` | 이름 \| 값 \| 이름 \| 값 표(4열은 두 칸씩 짝, `full`은 한 줄 전체). 이름 칸 `paper.fill` 600, 값이 비면 – |
+| `PaperFields` | `rows: { label, value, full?, blank? }[]` · `columns?: 4 \| 2`(기본 4) · `title?` · `note?` | 이름 \| 값 \| 이름 \| 값 표(4열은 두 칸씩 짝, `full`은 한 줄 전체). 이름 칸 `paper.fill` 600, 값이 비면 –. `blank`인 줄은 비어도 빈 칸(인쇄한 뒤 손으로 적는 수령일 · 서명) |
 | `PaperMoneyTable` | `columns: { header, width?, align? }[]` · `rows: 칸[][]` · `total?: 칸[]` · `carryIn?: 칸[]` · `carryOut?: 칸[]` · `title?` · `note?` | 열 폭은 colgroup(`xs` · `sm` · `md` · `lg` · `xl` · `auto`, DataGrid와 같은 이름). number 칸은 `formatAmount` · 오른쪽 · tabular. 합계 줄은 700, 위 `paper.lineStrong` 2px, 첫 칸은 행 머리. carryIn은 본문 첫 줄(600, 아래 `paper.lineStrong` 2px), carryOut은 합계 줄 자리 |
 | `PaperText` | `variant?: 'body' \| 'statement' \| 'note'` · `children` | statement = 가운데 확인 문장(`paper.type.h3`), note = 주석(`paper.muted` `paper.type.caption`) |
 | `PaperSignature` | `company` · `representative` · `role?`(기본 사전 "대표이사") · `date?` · `seal?` | 날짜(`paper.type.h3`) 아래 회사 · 직함 · 이름(`paper.type.h2` 700) · 직인. 쪽 아래쪽으로 붙는다 |

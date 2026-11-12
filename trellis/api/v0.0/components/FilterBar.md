@@ -31,6 +31,7 @@ root(`tl-filter-bar`, 자기 바탕 · 구분선 없음) · search(맨 앞) · f
 | `searching` | `boolean` | `false` |  | grid 검색 중(검색 단추 로딩) |
 | `collapsible` | `boolean` | `false` |  | grid 접기(접으면 적용한 조건을 칩으로 요약) |
 | `onClearFilter` | `(name: string) => void` |  |  | 칩 해제 단추(없으면 컨트롤 onChange에 기본값) |
+| `label` | `string` |  |  | 검색 영역 이름(없으면 "검색 조건", 한 화면에 둘 이상이면 따로) |
 
 ## Variants
 
@@ -54,7 +55,7 @@ default. 상태는 안의 컨트롤이 가진다. grid의 searching은 검색 �
 
 ## 접근성
 
-`role="search"` + `aria-label="검색 조건"`. 결과 건수는 `aria-live="polite"`라 필터를 바꾸면 읽힌다. 컨트롤마다 접근성 이름이 있어야 한다(라벨 없는 Select는 placeholder가 아니라 aria 이름으로). PR-30: 칩 해제 단추 이름은 "<이름> 조건 지우기". 시트 안 칩 묶음은 `role="radiogroup"`(Select) · `role="group"`(MultiSelect)이고 위 이름 글자가 `aria-labelledby`로 묶음 이름이 된다. 칩은 `role="radio"` · `role="checkbox"` + `aria-checked`이고 고른 칩은 색 말고 check 아이콘으로도 보인다. 접기 단추는 `aria-expanded` + `aria-controls`(격자), 접힌 요약은 `role="group"` + "적용한 조건". 좁은 화면 칩 줄은 단추로만 이루어져 Tab으로 지나며 보이는 자리로 밀린다.
+`role="search"` + `aria-label`(`label`, 없으면 "검색 조건"). 한 화면에 FilterBar가 둘 이상이면 묶음마다 `label`을 다르게 준다(같은 이름의 search 영역이 둘이면 구별되지 않는다, axe landmark-unique). 결과 건수는 `aria-live="polite"`라 필터를 바꾸면 읽힌다. 컨트롤마다 접근성 이름이 있어야 한다(라벨 없는 Select는 placeholder가 아니라 aria 이름으로). PR-30: 칩 해제 단추 이름은 "<이름> 조건 지우기". 시트 안 칩 묶음은 `role="radiogroup"`(Select) · `role="group"`(MultiSelect)이고 위 이름 글자가 `aria-labelledby`로 묶음 이름이 된다. 칩은 `role="radio"` · `role="checkbox"` + `aria-checked`이고 고른 칩은 색 말고 check 아이콘으로도 보인다. 접기 단추는 `aria-expanded` + `aria-controls`(격자), 접힌 요약은 `role="group"` + "적용한 조건". 좁은 화면 칩 줄은 단추로만 이루어져 Tab으로 지나며 보이는 자리로 밀린다.
 
 | 키 | 동작 |
 |---|---|

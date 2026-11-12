@@ -13,7 +13,7 @@ Trellis는 덩굴을 받치는 격자 틀입니다. 제품은 각자 자라고 �
 | `@terracelab/trellis-tokens` | CSS 변수 `--tl-*` · TS 객체 · React Native 테마 · Tailwind v4 테마 · Pretendard Variable 폰트 | 사용 가능 |
 | `@terracelab/trellis-icons` | UI 아이콘, 모듈 타일 일러스트 36종(모듈 35 전부 + 지출결의, 스프라이트 · SVG · manifest) | 사용 가능 |
 | `@terracelab/trellis-contracts` | 컴포넌트 props 타입 · 상태 어휘 · 숫자 서식(`formatAmount` 등) | 사용 가능 |
-| `@terracelab/trellis-react` | 웹 React 컴포넌트 116종: 기본 101종과 차트 15종(`/charts`). 컴포넌트마다 문서와 예시가 있고 전체 목록은 동봉 문서의 `manifest.json`에 있습니다 | 미리보기(0.x) |
+| `@terracelab/trellis-react` | 웹 React 컴포넌트 121종: 기본 106종과 차트 15종(`/charts`). 컴포넌트마다 문서와 예시가 있고 전체 목록은 동봉 문서의 `manifest.json`에 있습니다 | 미리보기(0.x) |
 | `@terracelab/trellis-blocks` | 화면 블록(복사형 소스, `pnpm ds:add`)과 플랫폼 기본 기능 타입 · 화면 배치 도우미. 데모 앱이 이것으로 조립된다 | 미리보기. 공개 전 |
 | `@terracelab/trellis-skill` | 서비스 저장소용 에이전트 스킬과 점검 도구(install · doctor · docs) | 사용 가능(git 하위 모듈) |
 | `@terracelab/trellis-native` | Expo 컴포넌트(같은 props) | 1.0 뒤 |
